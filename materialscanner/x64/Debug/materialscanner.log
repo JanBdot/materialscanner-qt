@@ -1,3 +1,2 @@
-﻿  Reading Qt configuration (G:/dev/tools/6.2.4/msvc2019_64/bin/qmake)
-  main.cpp
-  materialscanner.vcxproj -> G:\dev\projects\materialscanner\x64\Debug\materialscanner.exe
+﻿  Reading Qt configuration (C:/Qt/6.2.4/msvc2019_64/bin/qmake)
+  materialscanner.vcxproj -> C:\dev\materialscanner\materialscanner-qt\x64\Debug\materialscanner.exe

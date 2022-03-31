@@ -2,7 +2,7 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-      <FullPath>G:\dev\projects\materialscanner\x64\Debug\materialscanner.exe</FullPath>
+      <FullPath>C:\dev\materialscanner\materialscanner-qt\x64\Debug\materialscanner.exe</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles />
