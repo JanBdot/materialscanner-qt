@@ -55,9 +55,15 @@
     <ClCompile Include="camera-controller.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="lights-controller.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="camera-controller.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lights-controller.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

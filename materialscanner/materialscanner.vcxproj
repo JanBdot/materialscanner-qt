@@ -67,7 +67,7 @@
       <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
     </Link>
     <ClCompile>
-      <AdditionalIncludeDirectories>$(SolutionDir)\libs\GxIAPICPPEx\src\Common;$(SolutionDir)\libs\GxIAPICPPEx\inc;$(SolutionDir)\libs\mqtt\paho-c\include;$(SolutionDir)\libs\mqtt\paho-cpp\include\mqtt;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)\libs\GxIAPICPPEx\src\Common;$(SolutionDir)\libs\GxIAPICPPEx\inc;$(SolutionDir)\libs\mqtt\paho-c\include;$(SolutionDir)\libs\mqtt\paho-cpp\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -77,7 +77,7 @@
       <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
     </Link>
     <ClCompile>
-      <AdditionalIncludeDirectories>$(SolutionDir)\libs\GxIAPICPPEx\src\Common;$(SolutionDir)\libs\GxIAPICPPEx\inc;$(SolutionDir)\libs\mqtt\paho-c\include;$(SolutionDir)\libs\mqtt\paho-cpp\include\mqtt;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)\libs\GxIAPICPPEx\src\Common;$(SolutionDir)\libs\GxIAPICPPEx\inc;$(SolutionDir)\libs\mqtt\paho-c\include;$(SolutionDir)\libs\mqtt\paho-cpp\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="Configuration">
@@ -121,11 +121,13 @@
     <QtUic Include="materialscanner.ui" />
     <QtMoc Include="materialscanner.h" />
     <ClCompile Include="camera-controller.cpp" />
+    <ClCompile Include="lights-controller.cpp" />
     <ClCompile Include="materialscanner.cpp" />
     <ClCompile Include="main.cpp" />
     <None Include="materialscanner.ico" />
     <ResourceCompile Include="materialscanner.rc" />
     <ClInclude Include="camera-controller.h" />
+    <ClInclude Include="lights-controller.h" />
     <ClInclude Include="stdafx.h" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">Create</PrecompiledHeader>

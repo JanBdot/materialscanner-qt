@@ -1,2 +1,10 @@
 ﻿  Reading Qt configuration (C:/Qt/6.2.4/msvc2019_64/bin/qmake)
+  lights-controller.cpp
+  main.cpp
+C:\dev\materialscanner\materialscanner-qt\libs\mqtt\paho-cpp\include\mqtt\client.h(71,8): warning C4834: discarding return value of function with 'nodiscard' attribute (compiling source file lights-controller.cpp)
+C:\dev\materialscanner\materialscanner-qt\libs\mqtt\paho-cpp\include\mqtt\client.h(74,8): warning C4834: discarding return value of function with 'nodiscard' attribute (compiling source file lights-controller.cpp)
+C:\dev\materialscanner\materialscanner-qt\libs\mqtt\paho-cpp\include\mqtt\client.h(81,8): warning C4834: discarding return value of function with 'nodiscard' attribute (compiling source file lights-controller.cpp)
+C:\dev\materialscanner\materialscanner-qt\libs\mqtt\paho-cpp\include\mqtt\client.h(71,8): warning C4834: discarding return value of function with 'nodiscard' attribute (compiling source file main.cpp)
+C:\dev\materialscanner\materialscanner-qt\libs\mqtt\paho-cpp\include\mqtt\client.h(74,8): warning C4834: discarding return value of function with 'nodiscard' attribute (compiling source file main.cpp)
+C:\dev\materialscanner\materialscanner-qt\libs\mqtt\paho-cpp\include\mqtt\client.h(81,8): warning C4834: discarding return value of function with 'nodiscard' attribute (compiling source file main.cpp)
   materialscanner.vcxproj -> C:\dev\materialscanner\materialscanner-qt\x64\Debug\materialscanner.exe
