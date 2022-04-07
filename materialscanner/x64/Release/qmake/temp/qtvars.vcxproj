@@ -34,7 +34,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">
     <ClCompile>
-      <AdditionalIncludeDirectories>G:\dev\projects\materialscanner\materialscanner\x64\Release\qmake\temp;G:\dev\tools\6.2.4\msvc2019_64\include;G:\dev\tools\6.2.4\msvc2019_64\include\QtWidgets;G:\dev\tools\6.2.4\msvc2019_64\include\QtGui;G:\dev\tools\6.2.4\msvc2019_64\include\QtCore;G:\dev\projects\materialscanner\materialscanner\x64\Release\qmake\temp;/include;G:\dev\tools\6.2.4\msvc2019_64\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\Dokumente\GitHub\MaterialscannerGUI\materialscanner-qt\materialscanner\x64\Release\qmake\temp;D:\Qt\6.2.4\msvc2019_64\include;D:\Qt\6.2.4\msvc2019_64\include\QtWidgets;D:\Qt\6.2.4\msvc2019_64\include\QtGui;D:\Qt\6.2.4\msvc2019_64\include\QtCore;D:\Dokumente\GitHub\MaterialscannerGUI\materialscanner-qt\materialscanner\x64\Release\qmake\temp;/include;D:\Qt\6.2.4\msvc2019_64\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -permissive- -Zc:__cplusplus -Zc:externConstexpr -utf-8 %(AdditionalOptions)</AdditionalOptions>
       <AssemblerListingLocation>.\</AssemblerListingLocation>
       <BrowseInformation>false</BrowseInformation>
@@ -52,7 +52,7 @@
       <WarningLevel>TurnOffAllWarnings</WarningLevel>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>G:\dev\tools\6.2.4\msvc2019_64\lib\Qt6Widgets.lib;G:\dev\tools\6.2.4\msvc2019_64\lib\Qt6Gui.lib;G:\dev\tools\6.2.4\msvc2019_64\lib\Qt6Core.lib;G:\dev\tools\6.2.4\msvc2019_64\lib\Qt6EntryPoint.lib;shell32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>D:\Qt\6.2.4\msvc2019_64\lib\Qt6Widgets.lib;D:\Qt\6.2.4\msvc2019_64\lib\Qt6Gui.lib;D:\Qt\6.2.4\msvc2019_64\lib\Qt6Core.lib;D:\Qt\6.2.4\msvc2019_64\lib\Qt6EntryPoint.lib;shell32.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalOptions>&quot;/MANIFESTDEPENDENCY:type=&apos;win32&apos; name=&apos;Microsoft.Windows.Common-Controls&apos; version=&apos;6.0.0.0&apos; publicKeyToken=&apos;6595b64144ccf1df&apos; language=&apos;*&apos; processorArchitecture=&apos;*&apos;&quot; %(AdditionalOptions)</AdditionalOptions>
       <DataExecutionPrevention>true</DataExecutionPrevention>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
@@ -77,8 +77,8 @@
   <ItemGroup>
     <CustomBuild Include="moc_predefs.h.cbt">
       <FileType>Document</FileType>
-      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">G:\dev\tools\6.2.4\msvc2019_64\mkspecs\features\data\dummy.cpp;%(AdditionalInputs)</AdditionalInputs>
-      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">cl -BxG:\dev\tools\6.2.4\msvc2019_64\bin\qmake.exe -nologo -Zc:wchar_t -FS -Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -permissive- -Zc:__cplusplus -Zc:externConstexpr -O2 -MD -std:c++17 -utf-8 -W0 -E G:\dev\tools\6.2.4\msvc2019_64\mkspecs\features\data\dummy.cpp 2&gt;NUL &gt;moc_predefs.h</Command>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">D:\Qt\6.2.4\msvc2019_64\mkspecs\features\data\dummy.cpp;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">cl -BxD:\Qt\6.2.4\msvc2019_64\bin\qmake.exe -nologo -Zc:wchar_t -FS -Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -permissive- -Zc:__cplusplus -Zc:externConstexpr -O2 -MD -std:c++17 -utf-8 -W0 -E D:\Qt\6.2.4\msvc2019_64\mkspecs\features\data\dummy.cpp 2&gt;NUL &gt;moc_predefs.h</Command>
       <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">Generate moc_predefs.h</Message>
       <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">moc_predefs.h;%(Outputs)</Outputs>
     </CustomBuild>
