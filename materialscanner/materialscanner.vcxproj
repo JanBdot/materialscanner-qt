@@ -121,6 +121,7 @@
     <QtUic Include="materialscanner.ui" />
     <QtMoc Include="materialscanner.h" />
     <ClCompile Include="camera-controller.cpp" />
+    <ClCompile Include="camera.cpp" />
     <ClCompile Include="lights-controller.cpp" />
     <ClCompile Include="materialscanner.cpp" />
     <ClCompile Include="main.cpp" />

@@ -1,2 +1,6 @@
 ﻿  Reading Qt configuration (D:/Qt/6.2.4/msvc2019_64/bin/qmake)
-  materialscanner.vcxproj -> D:\Dokumente\GitHub\MaterialscannerGUI\materialscanner-qt\x64\Debug\materialscanner.exe
+  main.cpp
+D:\Dokumente\GitHub\MaterialscannerGUI\materialscanner-qt\libs\mqtt\paho-cpp\include\mqtt\client.h(71,8): warning C4834: Der Rückgabewert einer Funktion mit dem "nodiscard"-Attribut wird verworfen.
+D:\Dokumente\GitHub\MaterialscannerGUI\materialscanner-qt\libs\mqtt\paho-cpp\include\mqtt\client.h(74,8): warning C4834: Der Rückgabewert einer Funktion mit dem "nodiscard"-Attribut wird verworfen.
+D:\Dokumente\GitHub\MaterialscannerGUI\materialscanner-qt\libs\mqtt\paho-cpp\include\mqtt\client.h(81,8): warning C4834: Der Rückgabewert einer Funktion mit dem "nodiscard"-Attribut wird verworfen.
+D:\Dokumente\GitHub\MaterialscannerGUI\materialscanner-qt\materialscanner\main.cpp(8,9): fatal error C1083: Datei (Include) kann nicht geöffnet werden: "opencv2/opencv.hpp": No such file or directory
