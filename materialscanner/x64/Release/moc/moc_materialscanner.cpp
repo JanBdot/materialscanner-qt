@@ -9,7 +9,6 @@
 #include <memory>
 #include "stdafx.h"
 #include "../../../materialscanner.h"
-#include <QtGui/qtextcursor.h>
 #include <QtCore/qbytearray.h>
 #include <QtCore/qmetatype.h>
 #if !defined(Q_MOC_OUTPUT_REVISION)

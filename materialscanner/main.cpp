@@ -12,8 +12,8 @@ int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
     materialscanner w;
-    lightsController lights = lightsController::lightsController();
-    cameraController camera = cameraController::cameraController();
+    lightsController lightsController = lightsController::lightsController();
+    cameraController cameraController = cameraController::cameraController();
 
     //string address = "./image/9demo.bmp";
     //cv::Mat src = cv::imread(address);

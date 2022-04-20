@@ -1,6 +1,6 @@
 #include "camera-controller.h"
 #include<qdebug.h>
-#include "camera.cpp"
+#include "camera.h"
 
 using namespace std;
 
@@ -30,7 +30,7 @@ bool cameraController::initCamera()
 
     try {
         cout << "Init camera..." << endl;
-        camera cameraInstance; //create instance, assuming it has default constructor!
+        camera cameraInstance = camera();  //create instance, assuming it has default constructor!
         cameraInstance.run();
     }
     catch (CGalaxyException& e)
