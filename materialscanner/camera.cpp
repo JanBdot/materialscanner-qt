@@ -3,6 +3,8 @@
 #include<QImage>
 #include<QObject>
 #include "camera.h"
+#include "opencv2/opencv.hpp"
+#include "opencv2/core/mat.hpp"
 //#include<CSampleCaptureEventHandler.h>
 
 
@@ -122,7 +124,19 @@ bool camera::run()
             // Angenommen, die Originaldaten sind ein BayerRG8-Bild
             pRGB24Buffer = objImageDataPtr->ConvertToRGB24(GX_BIT_0_7, GX_RAW2RGB_NEIGHBOUR, true);
 
-            QImage* image = new QImage(objImageDataPtr->GetWidth(), objImageDataPtr->GetHeight(), QImage::Format_ARGB32);
+            int width = objImageDataPtr->GetWidth();
+            int height = objImageDataPtr->GetHeight();
+
+            // Welche konvertierungsmatrix braucht man?
+            cv::Mat openCvImage(height, width, CV_16UC1, pRGB24Buffer);
+            openCvImage.convertTo(openCvImage, CV_8UC1);
+
+            QImage qImage = QImage(
+                openCvImage.data,
+                width,
+                height,
+                QImage::Format_ARGB32
+            );
         }
         
 
