@@ -5,7 +5,7 @@
 #include "lights-controller.h"
 
 #include "mqtt/client.h"
-#include<opencv2/opencv.hpp>
+//#include<opencv2/opencv.hpp>
 #include<iostream>
 
 int main(int argc, char *argv[])
@@ -15,8 +15,8 @@ int main(int argc, char *argv[])
     lightsController lights = lightsController::lightsController();
     cameraController camera = cameraController::cameraController();
 
-    string address = "./image/9demo.bmp";
-    cv::Mat src = cv::imread(address);
+    //string address = "./image/9demo.bmp";
+    //cv::Mat src = cv::imread(address);
 
     w.show();
     return a.exec();
