@@ -117,6 +117,8 @@
     </QtMoc>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="WhiteBalance.cpp" />
+    <ClInclude Include="WhiteBalance.h" />
     <QtRcc Include="materialscanner.qrc" />
     <QtUic Include="materialscanner.ui" />
     <QtMoc Include="materialscanner.h" />
