@@ -1,5 +1,5 @@
 #include "camera-controller.h"
-#include<qdebug.h>
+#include <qdebug.h>
 #include "camera.h"
 
 using namespace std;

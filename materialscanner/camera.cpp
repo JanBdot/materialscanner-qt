@@ -1,10 +1,4 @@
-#include"GalaxyIncludes.h"
-#include<QWidget>
-#include<QImage>
-#include<QObject>
 #include "camera.h"
-#include "opencv2/opencv.hpp"
-#include "opencv2/core/mat.hpp"
 //#include<CSampleCaptureEventHandler.h>
 
 
@@ -114,12 +108,14 @@ bool camera::run()
 
         if (objImageDataPtr->GetStatus() == GX_FRAME_STATUS_SUCCESS)
         {
+            cv::Mat img;
             cout << "Bild erhalten!" << endl;
             cout << "ImageInfo: " << objImageDataPtr->GetStatus() << endl;
             cout << "ImageInfo: " << objImageDataPtr->GetWidth() << endl;
             cout << "ImageInfo: " << objImageDataPtr->GetHeight() << endl;
             cout << "ImageInfo: " << objImageDataPtr->GetPayloadSize() << endl;
 
+            /*
             void* pRGB24Buffer = NULL;
             // Angenommen, die Originaldaten sind ein BayerRG8-Bild
             pRGB24Buffer = objImageDataPtr->ConvertToRGB24(GX_BIT_0_7, GX_RAW2RGB_NEIGHBOUR, true);
@@ -137,12 +133,20 @@ bool camera::run()
                 height,
                 QImage::Format_ARGB32
             );
-        }
-        
+            */
 
-        //cout << "Sleep started!" << endl;
-        //Sleep(10000);
-        //cout << "Sleep ended!" << endl;
+            img.create(objImageDataPtr->GetHeight(), objImageDataPtr->GetWidth(), CV_8UC3);
+            void* pRGB24Buffer = NULL;
+            // Angenommen, die Originaldaten sind ein BayerRG8-Bild
+            //pRGB24Buffer = objImageDataPtr->ConvertToRaw8(GX_BIT_0_7);
+            pRGB24Buffer = objImageDataPtr->ConvertToRGB24(GX_BIT_0_7, GX_RAW2RGB_NEIGHBOUR, true);
+            memcpy(img.data, pRGB24Buffer, (objImageDataPtr->GetHeight()) * (objImageDataPtr->GetWidth()) * 3);
+            cv::flip(img, img, 0);
+            cv::rotate(img, img, cv::ROTATE_90_COUNTERCLOCKWISE);
+            //cv::imshow("sss", img);
+            cv::waitKey(1);
+            cv::imwrite("03.bmp", img);
+        }
 
         //Befehl "Miningstopp senden"
         ObjFeatureControlPtr->GetCommandFeature("AcquisitionStop")->Execute();
