@@ -31,7 +31,13 @@ bool cameraController::initCamera()
     try {
         cout << "Init camera..." << endl;
         camera cameraInstance = camera();  //create instance, assuming it has default constructor!
-        cameraInstance.run();
+        if (cameraInstance.initDevice()) {
+            if (cameraInstance.initStream())
+            {
+                cameraInstance.takePictureEvent();
+            }
+        }
+        cameraInstance.unInit();
     }
     catch (CGalaxyException& e)
     {

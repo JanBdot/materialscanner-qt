@@ -122,6 +122,7 @@
     <QtMoc Include="materialscanner.h" />
     <ClCompile Include="camera-controller.cpp" />
     <ClCompile Include="camera.cpp" />
+    <ClCompile Include="CaptureEventHandler.cpp" />
     <ClCompile Include="lights-controller.cpp" />
     <ClCompile Include="materialscanner.cpp" />
     <ClCompile Include="main.cpp" />
@@ -129,6 +130,7 @@
     <ResourceCompile Include="materialscanner.rc" />
     <ClInclude Include="camera-controller.h" />
     <ClInclude Include="camera.h" />
+    <ClInclude Include="CaptureEventHandler.h" />
     <ClInclude Include="lights-controller.h" />
     <ClInclude Include="stdafx.h" />
     <ClCompile Include="stdafx.cpp">

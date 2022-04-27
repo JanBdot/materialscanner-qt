@@ -5,13 +5,23 @@
 #include<QObject>
 #include "opencv2/opencv.hpp"
 #include "opencv2/core/mat.hpp"
+#include "CaptureEventHandler.h"
 
-class camera : ICaptureEventHandler
+class camera
 {
 public:
     camera();
     ~camera();
 
-    void DoOnImageCaptured(CImageDataPointer& objImageDataPointer, void* pUserParam);
-    bool run();
+    bool initDevice();
+    bool initStream();
+    bool takePicture();
+    bool unInit();
+
+    bool takePictureEvent();
+
+private:
+    CGXDevicePointer objDevicePtr;
+    CGXStreamPointer objStreamPtr;
+    CGXFeatureControlPointer ObjFeatureControlPtr;
 };
